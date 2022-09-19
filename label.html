@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>首页</title>
+		<link rel="stylesheet" href="../lib/bootstrap-3.4.1-dist/css/bootstrap.css">
+		<link rel="stylesheet" href="./css/index.css">
+		<link rel="stylesheet" href="./css/details.css">
+		<link rel="stylesheet" href="./css/label.css">
+		<script src="../lib/jquery-1.11.1/jquery.js"></script>
+		<script src="../lib/bootstrap-3.4.1-dist/js/bootstrap.js"></script>
+		<script src="./js/index.js" type="text/javascript"></script>
+		<script src="js/search.js"></script>
+	</head>
+	<body>
+		<div class="box">
+			<!-- 头部 -->
+			<div class="nav">
+				<div class="header">
+					<div class="logo">
+						<a href="">IT小马博客</a>
+					</div>
+					<ul class="menu">
+						<li><a href="" id="on"><i class="glyphicon glyphicon-home"></i>博客首页</a></li>
+						<li><a href=""><i class="glyphicon glyphicon-th-list"></i>博客分类</a></li>
+						<li><a href=""><i class="glyphicon glyphicon-tags"></i>博客标签</a></li>
+						<li><a href=""><i class="glyphicon glyphicon-folder-open"></i>博客归档</a></li>
+						<li><a href=""><i class="glyphicon glyphicon-user"></i>关于作者</a></li>
+					</ul>
+					<div class="search">
+						<input type="text" placeholder="搜索博客..." id="blog">
+						<i class="glyphicon glyphicon-search" onclick="search()"></i>
+					</div>
+				</div>
+			</div>
+			<!-- 内容 -->
+			<div class="blog_label">
+				<!-- 头部 -->
+				<div class="label_header">
+					<div>
+						<h3>标签</h3>
+						<div>
+							共<span id="label_count">10</span>个
+						</div>
+					</div>
+					<div class="list" id="list">
+						<span>Java<i class=""></i><span>24</span></span>
+						<span>Sql<i class=""></i><span>24</span></span>
+						<span>Spring<i class=""></i><span>24</span></span>
+						<span>Spring<i class=""></i><span>24</span></span>
+						<span>Spring<i class=""></i><span>24</span></span>
+						<span>Spring<i class=""></i><span>24</span></span>
+						<span>Springfsfsfsfsf<i class=""></i><span>24</span></span>
+						<span>Spring<i class=""></i><span>24</span></span>
+						<span>Spring<i class=""></i><span>24</span></span>
+					</div>
+				</div>
+
+				<!--  -->
+				<div class="label_content">
+					<div id="content_box">
+						<div class="content_list">
+							<div class="item">
+								<h3><a href="">LeetCode-001 两数之和</a></h3>
+								<p><a href="">给定一个整数数组 nums 和一个目标值 target，
+										请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。</a></p>
+								<img src="./img/avatar.jpg" alt="图片被偷了" class="head_photo">
+								<div class="author_name">小马</div>
+								<div class="date"><i class="glyphicon glyphicon-calendar"></i>2022-05-20</div>
+								<div class="count"><i class="glyphicon glyphicon-eye-open"></i>59</div>
+								<div class="classfy">学习笔记</div>
+							</div>
+							<div class="img"><img src="./img/about.jpeg" alt="图片被偷了"></div>
+							<div class="item_line"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 脚部 -->
+			<div class="footer">
+				<p>网站访问量:1360</p>
+				<p>已持续运行时间:3360天</p>
+				<div class="footer_container">
+					<div class="row">
+						<div class="col-md-3"><img src="./img/openSourceUrl.jpg" alt="图片被偷了"></div>
+						<div class="col-md-3">
+							最新博客
+							<p>一篇带你看懂正则表达式</p>
+							<p>常见算法之两个字符串最长相同子串</p>
+							<p>面向对象编程原则你都了解多少</p>
+						</div>
+						<div class="col-md-3">
+							联系作者
+							<p>qq:2793499873</p>
+							<p>邮箱:279349873@qq.com</p>
+							<p>电话:17729347296</p>
+							<p><a href="#">GitHub:Xiaoma</a></p>
+						</div>
+						<div class="col-md-3">
+							Blog
+							<p>每个人都有属于自己的一片森林</p>
+							<p>也许我们从来不曾去过</p>
+							<p>但它一直在那里，总会在那里。</p>
+						</div>
+					</div>
+				</div>
+				<div class="footer_bottom">
+					<div class="line"></div>
+					<div class="info">
+						<p>Copyright© 2020-2022 IT小马 All Rights Reserved</p>
+						<p>通讯地址: 北京市学院路xxx号</p>
+						<p><a href="">京ICP备202XXXXX号</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/details.js"></script>
+	</body>
+</html>

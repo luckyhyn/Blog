@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>分类</title>
+		<link rel="stylesheet" href="../lib/bootstrap-3.4.1-dist/css/bootstrap.css">
+		<script src="../lib/jquery-1.11.1/jquery.js"></script>
+		<script src="../lib/bootstrap-3.4.1-dist/js/bootstrap.js"></script>
+		<link rel="stylesheet" type="text/css" href="./css/header1.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/footer1.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/index1.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/details1.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/sort.css"/>
+		
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			ul,ol{
+				list-style: none;
+			}
+			a{
+				text-decoration: none;
+				cursor: pointer;
+			}
+			body{
+				background:url(./img/bg.png);
+				font-size: 16px;
+			}
+			
+			
+
+		</style>
+
+	</head>
+	
+	<body>
+		<div class="box">
+			<div class="nav">
+				<div class="nav_container">
+					<div class="logo">
+						<a href="">IT小马博客</a>
+					</div>
+					<ul>
+						<li ><a href="./index.html" ><i class="glyphicon glyphicon-home"></i>博客首页</a></li>
+						<li><a href="./sort.html" class="active"><i class="glyphicon glyphicon-th-list"></i>博客分类</a></li>
+						<li><a href="./index.html"><i class="glyphicon glyphicon-tags"></i>博客标签</a></li>
+						<li><a href="./index.html"><i class="glyphicon glyphicon-folder-open"></i>博客归档</a></li>
+						<li><a href="./index.html"><i class="glyphicon glyphicon-user"></i>关于作者</a></li>
+						
+<!-- 						<li onclick="indexPage(this)" id="li1"><i class="glyphicon glyphicon-home"></i>首页</li>
+						<li id="li2"><a href="./sort.html"><i class="glyphicon glyphicon-th-list" ></i>分类</a></li>
+						<li onclick="label(this)" id="li3"><i class="glyphicon glyphicon-tags"></i>标签</li>
+						<li onclick="file()" id="li4"><i class="glyphicon glyphicon-folder-open"></i>归档</li>
+						<li onclick="about()" id="li5"><i class="glyphicon glyphicon-user"></i>关于我</li> -->
+					</ul>
+					<div class="search">
+						<form>
+							<input type="text" placeholder="搜索博客..." id="search">
+							<i class="glyphicon glyphicon-search" onclick="onSearch()"></i>
+						</form>
+					</div>
+				</div>
+			</div>
+			
+			<div class="container"   id="content">
+				<div class="row">
+					<div class="col-md-12">
+						<div style="width: 80%;height: auto; margin: 10px auto;border-radius: 5px; border: 1px solid #c0c0c0;">
+							<div style="width: 100%;height: 60px;margin: 5px auto; border-bottom: 1px solid #c0c0c0; ">
+								<span style="display: inline-block; height: 60px;line-height: 60px;width: 10%;text-align: center;color: #00b5ad;font-weight: 800;">标签分类</span>
+								<span style="display: inline-block;float: right;height: 60px;line-height: 60px;margin-right: 20px;">共&nbsp;<span style="font-size: 25px;color: #F37325;" id="tag_count">5</span>&nbsp;个标签</span>
+							</div>
+							<div style="width: 90%;height: auto; margin: 25px 7% 25px 3%;">
+									<ul class="sort_tag" id="tag_details">	
+									</ul>
+							</div>
+						</div>
+						<div id="content_box" style="width: 80%;height: auto;border-radius: 5px;margin-top: 10px;margin: 10px auto; border: 1px solid #c0c0c0; border-top:2px solid #08B6AF;">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="footer">
+				<div class="container">
+					<p>网站访问量:<span id="number">1360</span></p>
+					<p>已持续运行时间:<span id="time">3360天</span></p>
+					<div class="footer_center">
+						<div class="row">
+							<div class="col-md-3">
+								<img style="width: 100%;height: 100%;" src="./img/openSourceUrl.jpg" alt="哎呀!微信二维码失踪了">
+							</div>
+							<div class="col-md-3">
+								<h4>最新博客</h4>
+								<p>XX有上热搜了！</p>
+								<p>今天疫情已经结束了</p>
+								<p>台风在XX地方登录了！！撒啊多所多啊打算按时</p>
+							</div>
+							<div class="col-md-3">
+								<h4>联系作者</h4>
+								<p>邮箱：1231231@qq.com</p>
+								<p>QQ：1231231</p>
+								<p>手机号：13700000001</p>
+								<p><a href="">GitHub:xiaoma</a></p>
+							</div>
+							<div class="col-md-3">
+								<h4>Blog</h4>
+								<p>每个人都有属于自己的一片森林</p>
+								<p>也许我们从来不曾去过</p>
+								<p>但它一直在那里，总会在那里。</p>
+							</div>
+						</div>
+						<div class="line"></div>
+					</div>
+					<div class="footer_bottom">
+						<p>Copyright© 2020-2022 IT小马 All Rights Reserved</p>
+						<p>通讯地址: 北京市学院路xxx号</p>
+						<p><a href="http://www.baidu.com">京ICP备202XXXXX号</a></p>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</body>
+	<!-- 数据模拟 -->
+	<script>
+		//模拟标签数据
+		var tag = [
+					{id:1,
+					title:"教程",
+					count:3
+					},
+					{id:2,
+					title:"学习笔记",
+					count:1},
+					{id:3,
+					title:"面试整理",
+					count:1},
+					{id:4,
+					title:"程序人生",
+					count:0},
+					{id:5,
+					title:"踩坑记录",
+					count:0}
+					
+					]
+		//模拟内容数据
+		var data=[
+			{id:1,title:"LeetCode-001 两数之和",content:"给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。",avatar:"./img/avatar.jpg",username:"小马",time:"2022-05-22",num:"59",sign:"学习笔记",img:"./img/about.jpeg",tid:2},
+			{id:2,title:"关于MySQL面试100个常见问题",content:"本文主要受众为开发人员,所以不涉及到MySQL的服务部署等操作",avatar:"./images/avatar.jpg",username:"小灰",time:"2021-02-22",num:"1550",sign:"面试整理",img:"./images/about.jpeg",tid:3},
+			{id:3,title:"Linux系统使用Yum命令安装Java环境",content:"Linux上安装软件，可以用yum非常方便，不需要下载解压，也不需要配置环境变量,一个指令就能完成",avatar:"./img/avatar.jpg",username:"小马",time:"2022-02-22",num:"163",sign:"教程",img:"./img/about.jpeg",tid:1},
+			{id:4,title:"SpringBoot项目部署云服务器详细步骤",content:"此篇文章将详细介绍如何将自己的SpringBoot项目部署到各大互联网公司提供的在线云解决方案,并且能从外网直接访问",avatar:"./img/avatar.jpg",username:"小马",time:"2022-05-22",num:"59",sign:"教程",img:"./img/about.jpeg",tid:1},
+			{id:5,title:"Git以及Github使用指南",content:"GitHub于2008年4月10日正式上线，除了Git代码仓库托管及基本的Web管理界面以外，还提供了订阅、讨论组、文本渲染、在线文件编辑器、协作图谱（报表）、代码片段分享（Gist）等功能",avatar:"./img/avatar.jpg",username:"小马",time:"2022-05-22",num:"59",sign:"教程",img:"./img/about.jpeg",tid:1}
+		]
+	</script>
+	
+	<!-- 显示数据 -->
+	<script >
+		//统计标签个数
+				
+				$("#tag_count").html(tag.length)
+				//显示标签
+				var str=""
+				for(var i=0;i<tag.length;i++){
+					str+="<li onclick='show(this)' value='"+tag[i].id+"'>"+tag[i].title+"<span>"+tag[i].count+"<i></i></span></li>"
+				}
+				if(str.length==0){
+					str='<div class="tag_prompt">对不起还没有数据</div>';
+				}
+				$("#tag_details").html(str);
+				//默认显示内容为第一个标签内容
+				str=""
+				//没有数据要显示的内容
+				var strnull='<div class="tag_prompt" >'+
+										'<span>对不起还没有数据！</span>'+
+									'</div>'
+				//遍历取值
+				for(var i=0;i<data.length;i++){
+					if(data[i].tid==tag[0].id){
+						str += '<div class="content_list">'+
+									'<div class="item">'+
+										'<h3><a onclick="details('+data[i].id+')">'+data[i].title+'</h3>'+
+										'<p><a>'+data[i].content+'</a></p>'+
+										'<div>'+
+											'<div class="item_img"><img src="'+data[i].avatar+'" alt=""></div>'+
+											'<div class="item_name">'+data[i].username+'</div>'+
+											'<div class="item_time"><i class="glyphicon glyphicon-calendar"></i>'+data[i].time+'</div>'+
+											'<div class="item_num"><i class="glyphicon glyphicon-eye-open"></i>'+data[i].num+'</div>'+
+											'<div class="item_sign">'+data[i].sign+'</div>'+
+										'</div>'+
+									'</div>'+
+									'<div class="img"><img src="'+data[i].img+'" alt="" width="100"></div>'+
+									'<div class="item_line"></div>'+
+								'</div>'
+					}
+				}
+				var strnull='<div class="tag_prompt" >'+
+										'<span>对不起还没有数据！</span>'+
+									'</div>'
+				 $("#content_box").html(str)
+				 if(str.length==0){
+					  $("#content_box").html(strnull)
+				 }
+				
+				//显示数据函数
+				var show=function(obj){
+					
+					$("#tag_details li").css("border", "1px solid #c0c0c0")
+					$(obj).css("border"," 2px solid #00B4AD")
+					// console.log($(obj).val())
+					//获取标签id
+					var id=$(obj).val()
+					str=""
+					for(var i=0;i<data.length;i++){
+						if(data[i].tid==id){
+							str += '<div class="content_list">'+
+										'<div class="item">'+
+											'<h3><a onclick="details('+data[i].id+')">'+data[i].title+'</h3>'+
+											'<p><a onclick="details('+data[i].id+')">'+data[i].content+'</a></p>'+
+											'<div>'+
+												'<div class="item_img"><img src="'+data[i].avatar+'" alt=""></div>'+
+												'<div class="item_name">'+data[i].username+'</div>'+
+												'<div class="item_time"><i class="glyphicon glyphicon-calendar"></i>'+data[i].time+'</div>'+
+												'<div class="item_num"><i class="glyphicon glyphicon-eye-open"></i>'+data[i].num+'</div>'+
+												'<div class="item_sign">'+data[i].sign+'</div>'+
+											'</div>'+
+										'</div>'+
+										'<div class="img"><img src="'+data[i].img+'" alt="" width="100"></div>'+
+										'<div class="item_line"></div>'+
+									'</div>'
+						}
+					}
+					$("#content_box").html(str)
+					if(str.length==0){
+						$("#content_box").html(strnull)
+					}
+				}
+	</script>
+	<script src="./js/search1.js"></script>
+	<script src="./js/details1.js"></script>
+
+</html>

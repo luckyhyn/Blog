@@ -1,0 +1,325 @@
+/* 关于作者界面 */
+.author_box {
+	position: relative;
+	left: 0;
+	right: 0;
+	width: 70%;
+	margin: 40px auto;
+	height: auto;
+}
+
+.author_info_header {
+	width: 100%;
+	height: 120px;
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: 0 0 5px #ccc;
+}
+
+.author_picture {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 20px;
+	position: relative;
+	top: 10px;
+	
+}
+
+.author_picture img {
+	width: 100%;
+}
+.header_top_l_center_l{
+	float: left;
+}
+.header_top_l_center_t{
+	width: 80%;
+	height: 30px;
+	margin-left: 136px;
+	margin-top: -60px;
+}
+.header_top_l_center_t p{
+	float: left;
+	margin-right: 22px;
+	height: 30px;
+	line-height: 30px;
+}
+.header_top_l_center_t p:hover{
+	color: #dc3545;
+}
+/* .author_name{
+	font-size: 22px;
+	font-weight: bold;
+	color: #b87100;
+} */
+
+.header_top_l_center_t p i{
+	margin-right: 5px;
+}
+.header_top_l_center_t>div{
+	width: 70px;
+	height: 30px;
+	float: left;
+	position: absolute;
+	right: 88px;
+	top: 60px;
+	text-align: center;
+	
+}
+.header_top_l_center_t>div>input{
+	width: 100%;
+	height: 100%;
+	border-radius: 30px;
+	background-color: #fff;
+	border: 1px solid #F2711B;
+	color: #F2711B;
+}
+//
+.author_content{
+	width: 100%;
+	height: auto;
+	margin-right: 5%;
+	position: relative;
+}
+.author_left{
+	width: 25%;
+	margin-top: 20px;
+	/* position: fixed; */
+	
+	
+}
+.author_influence{
+	width: 100%;
+	height: 96px;
+	margin-bottom: 10px;
+	position: relative;
+	background-color: #fff;
+	box-shadow: 0 0 5px #ccc;
+	border-radius: 5px;
+}
+.influence_img{
+	width: 70px;
+	height: 20px;
+	margin-left: 10px;
+}
+.influence_img img{
+	width: 100%;
+}
+.influence_img div{
+	position: absolute;
+	top: 3px;
+	right: 20px;
+}
+.influence_img div>i{
+	font-weight: bold;
+	margin-right: 93px;
+}
+.author_marknum{
+	margin-top: 10px;
+	width: auto;
+	height: 54px;
+	margin-left: 10px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	background: rgba(248,240,225,.4);
+	border-radius: 5px;
+}
+.author_marknum p{
+	width: 100%;
+	height: 54px;
+	line-height: 54px;
+}
+.author_marknum span{
+	font-weight: bold;
+	margin: 0 10px;
+}
+.author_achive{
+	width: 100%;
+	height: auto;
+	position: relative;
+	background-color: #fff;
+	box-shadow: 0 0 5px #ccc;
+	border-radius: 5px;
+}
+.author_achive_head{
+	font-size: 18px;
+	padding: 8px 10px;
+	border-bottom: 1px solid #D4D4D5;
+}
+.achivelist{
+	margin-left: 10px;
+}
+.achivelist li{
+	margin: 3px;
+}
+.achivelist li>img{
+	width: 24px;
+	height: 24px;
+}
+.achivelist li>span{
+	margin: 0 3px;
+	font-weight: bold;
+}
+.author_interest{
+	width: 100%;
+	height: auto;
+	position: relative;
+	background-color: #fff;
+	box-shadow: 0 0 5px #ccc;
+	border-radius: 5px;
+}
+.author_interest>div{
+	font-size: 18px;
+	padding: 8px 10px;
+	border-bottom: 1px solid #D4D4D5;
+}
+.author_interest>ul{
+	margin-left: 10px;
+	margin-top: 5px;
+}
+.self_introduce{
+	width: 100%;
+	height: auto;
+	position: relative;
+	background-color: #fff;
+	box-shadow: 0 0 5px #ccc;
+	border-radius: 5px;
+}
+.self_introduce p{
+	padding: 5px 10px;
+}
+.self_introduce>div{
+	padding: 8px 10px;
+	font-size: 18px;
+	border-bottom: 1px solid #D4D4D5;
+}
+//右边部分
+{
+	width: 70%;
+	height: 400px;
+	background-color: aquamarine;
+	position: absolute;
+	right: 0;
+	top: -100px;
+}
+.author_right{
+	display: inline-block;
+	width: 72%;
+	position: relative;
+	left: 28%;
+	top: -586px;
+}
+.author_navlist{
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: 0 0 5px #ccc;
+	margin-top: 47px;
+}
+.author_navlist li{
+	float: left;
+	padding: 12px 12px;
+}
+.author_navlist li>a{
+	color: #000;
+}
+
+/* 作者文章 */
+.author_content_list{
+	padding: 16px;
+	margin-top: 10px;
+	overflow: hidden;
+	border: 1px solid #D4D4D5;
+	box-shadow: 0 0 5px #ccc;
+	background-color: #fff;
+	sho
+}
+.author_content_list .author_item{
+	width: 72%;
+	float: left;
+}
+.author_content_list .author_img{
+	width: 26%;
+	float: right;
+}
+.author_content_list .author_item p{
+	margin-top: 10px;
+}
+.author_item h3 a{
+	color: #000;
+	font-weight: bold;
+	font-size: 22px;
+}
+.author_item p a{
+	color: #000;
+}
+a:hover{
+	text-decoration: none ;
+}
+.author_item>div{
+	width: 100%;
+	position: relative;
+}
+.author_item>div>div{
+	float: left;
+}
+.author_item_img{
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.author_item_img img{
+	width: 100%;
+	height: 100%;
+}
+.author_item_name{
+	margin: 0 10px;
+	color: #3F83C3;
+	font-weight: bold;
+	font-size: 14px;
+	height: 22px;
+	line-height: 22px;
+}
+.author_item_time,.author_item_num{
+	margin: 0 10px;
+	color: #B5B5B5;
+	font-size: 14px;
+}
+.author_item_time i,.author_item_num i{
+	margin-right: 3px;
+}
+
+.author_item_sign{
+	border: 2px solid #00B4AD;
+	font-size: 14px;
+	padding: 2px 5px;
+	border-radius: 5px;
+	color:#00B4AD ;
+	position: absolute;
+	right: 12px;
+	top: -7px;
+}
+
+.author_img{
+	margin-top: 20px;
+	height: 110px;
+	overflow: hidden;
+	border-radius: 5px;
+}
+.author_img img{
+	width: 100%;
+}
+.author_item_line{
+	width: 100%;
+	height: 1.5px;
+	background-color: #D4D4D5;
+	margin-top: 170px;
+}
+
+.author_content_list:last-child .author_item_line{
+	height: 0;
+}

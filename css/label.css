@@ -1,0 +1,104 @@
+.blog_label{
+	width: 70%;
+	height: auto;
+	margin: 20px auto;
+	background-color: #fff;
+}
+
+.label_header {
+	height: auto;
+	width: 100%;
+	border: 1px solid #D4D4D5;
+}
+
+#label_count {
+	color: #F37325;
+	font-size: 26px;
+}
+
+.label_header div:first-child{
+	border-bottom: 1px solid #D4D4D5;
+	padding: 10px 10px;
+}
+
+.label_header>div>div{
+	float: right;
+	margin-right: 10px;
+}
+
+.label_header h3 {
+	/* float: left; */
+	color: #00B4AD;
+	font-weight: bold;
+	font-size: 20px;
+	margin: 10px 10px;
+	display: inline-block;
+}
+
+.list{
+	width: 100%;
+	height: auto;
+	padding: 25px 30px;
+	line-height: 56px;
+}
+
+/* 未选中的样式 */
+.list>span {
+	border: 1px solid #ccc;
+	color: #000;
+	padding: 10px 26px;
+	position: relative;
+	font-weight: bold;
+	border-radius: 5px;
+	margin-right:8px;
+	cursor: pointer;
+}
+
+/* 选中span的样式 */
+.span_active{
+	border: 1px solid #00B4AD !important;
+	color: #00B4AD !important;
+}
+
+
+.list>span>span{
+	margin-left: 20px;
+}
+
+.list>span:hover{
+	color: #1e70bf;
+}
+
+.list i{
+	    position: absolute;
+	    border: 1px solid #ccc;
+	    top: 12px;
+	    left: -5px;
+	    padding: 4px;
+	    transform: rotate(45deg);
+	    border-top: none;
+	    border-right: none;
+	    background-color: #fff;
+}
+
+/* 被选中后i的样式 */
+.i_active{
+	 border: 1px solid #00B4AD !important;
+	 border-top: none !important;
+	 border-right: none !important;
+}
+
+.label_content{
+	width: 100%;
+	height: auto;
+	border: 1px solid #ccc;
+	padding: 10px 20px;
+	border-top: 2px solid #00B4AD;
+	border-radius: 4px;
+	margin-top: 14px;
+}
+
+.content_list:last-child .item_line{
+	width: 0;
+	height: 0;
+}
